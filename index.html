@@ -5,103 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pronatec</title>
     <link rel="shortcut icon" href="ICONES/logoPronatec.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0px;
+            background-color: #F6F6F6;
+            zoom: 100%;
+        }
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 45px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.304);
+            z-index: 999;
+        }
+        #logoCedup {
+            width: 100px;
+            margin-top: 3px;
+        }
+        #menu {
+            width: 60px;
+            height: 40px;
+            position: fixed;
+            font-size: 30px;
+            border: 0px;
+            cursor: pointer;
+            background-color: #F6F6F6;
+        }
+        #imgFundo {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            filter: brightness(45%);
+        }
+        .paragrafos {
+            text-align: center;
+            height: 150px;
+            width: 300px;
+            margin: 0px auto;
+            transition: transform 0.2s ease-in-out;
+            cursor: default;
+            margin-top: 20px;
+        }
+        .paragrafos:hover {
+            transform: scale(1.06);
+        }
+        .animacao {
+            transition: transform 0.2s ease;
+        }
+        .animacao:hover {
+            transform: scale(1.06);
+        }
+        .botao {
+            background-color: rgba(240, 248, 255, 0);
+            border: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            color: rgb(26, 26, 26);
+            margin: 10px;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .botao:hover {
+            transform: scale(1.05);
+            color: #012c81;
+        }
+        .linguagens {
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.251);
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries para telas menores */
+        @media (max-width: 768px) {
+            header {
+                height: 60px;
+            }
+            #logoCedup {
+                width: 150px;
+            }
+            #menu {
+                font-size: 25px;
+            }
+            .paragrafos {
+                width: 250px;
+            }
+            .linguagens {
+                width: 120px;
+                height: 120px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            .animacao {
+                width: 100%;
+                height: auto;
+            }
+            .botao {
+                font-size: 12px;
+                margin: 8px;
+            }
+            .botao:hover {
+                transform: scale(1.02);
+            }
+        }
+
+        @media (max-width: 480px) {
+            #logoCedup {
+                width: 120px;
+            }
+            .paragrafos {
+                width: 220px;
+                margin-top: 15px;
+            }
+            .linguagens {
+                width: 100px;
+                height: 100px;
+            }
+            .botao {
+                font-size: 10px;
+                padding: 8px;
+            }
+            header {
+                height: 70px;
+            }
+            .botao:hover {
+                transform: scale(1.02);
+            }
+        }
+
+    </style>
 </head>
-<style>
-    body{
-        margin: 0px;
-        background-color: #F6F6F6;
-        zoom: 130%;
-    }
-    *{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
-    }
-    header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        height: 45px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.304);
-    }
-    #logoCedup{
-        width: 200px;
-        margin-top: 3px;
-    }
-    #menu{
-        width: 60px;
-        height: 40px;
-        position: fixed;
-        font-size: 30px;
-        border: 0px;
-        cursor: pointer;
-        background-color: #F6F6F6;
-    }
-    #imgFundo{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
-        filter:brightness(45%);
-    }
-    .paragrafos{
-        text-align: center;
-        height: 150px;
-        width: 350px;
-        margin-left: 0px;
-        margin-right: 0px;
-        transition: transform 0.2s ease-in-out;
-        cursor: default;
-        margin-top: 20px;
-        
-    }
-    .paragrafos:hover{
-        transform: scale(1.06);
-    }
-    .animacao{
-        transition: transform 0.2s ease;
-    }
-    .animacao:hover{
-        transform: scale(1.06);
-    }
-    .botao{
-        background-color: rgba(240, 248, 255, 0);
-        border: 0px;
-        font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-        font-weight: 700;
-        color: rgb(26, 26, 26);
-        margin-left: 10px;
-        margin-right: 10px;
-        transition: transform 0.2s ease;
-        cursor: pointer;
-        font-size: 14px;
-    }
-    .botao:hover{
-        transform: scale(1.05);
-        color:#012c81;
-    }
-    .linguagens{
-        width: 220px;
-        height: 230px;
-        margin-top: 0px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.251);
-        cursor: pointer;
-        border-radius: 10px;
-        
-    }
-    h2{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 35px;
-        font-weight: 900;
-        margin: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
-</style>
 <body>
     <figure style="margin: 0px; padding: 0px; cursor:default; border-left: 0px; border-right: 0px; border-style: solid; border-color: #FFCD24;">
         <div style="width: 100%; height: 600px; overflow: hidden;">
@@ -148,96 +203,7 @@
     </div>
     
     <div style="overflow: hidden; margin-top: 50px; ">
-            <img src="ICONES/banne2.png" alt="" style="width: 100%;">
-        </div>
-    <div style="text-align: center; height: 300px; 
-     background-color: #f6f6f6; margin-top: 30px; margin-bottom: 50px; border-left: #FFCD24; border-left-style: solid; border-left-width: 14px; border-right: #FFCD24; border-right-style: solid; border-right-width: 14px;">
-    <div style="display: inline-flex;height: 100%; font-size: 17px; background-color: #f6f6f600; border-radius: 20px; padding-left: 50px; padding-right: 50px; ">
-        <div class="paragrafos">
-            <a href="https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)" target="_blank"><img src="ICONES/JAVA.png" alt="" class="linguagens"></a>
-        </div>
-        <div class="paragrafos">
-            <a href="https://pt.wikipedia.org/wiki/Python" target="_blank"><img src="ICONES/python.png" alt="" class="linguagens"></a>
-        </div>
-        <div class="paragrafos">
-            <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank"><img src="ICONES/JavaScript.png" alt="" class="linguagens"></a>
-        </div>
+        <img src="ICONES/banne2.png" alt="" style="width: 100%;">
     </div>
-    </div>
-    <div style=" height: 800px; width: 100%; display: inline-flex;  background-color: #F6F6F6;" id="poo">
-        <div>
-            <img src="ICONES/UrsinhoPooh.png" alt="" style="height: 600px; margin-left: 150px;">
-        </div>
-        <div style="padding-left: 200px; padding-top: 3%;">
-            
-            <div style="width: 600px; text-align: justify; font-size: 18px;">
-                <h2 class="animacao" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#FFCD24; font-size: 30px; text-align: center;  cursor: default;" >POO - Programação Orientada a Objetos</h2>
-                <p style="cursor: default;">A Programação Orientada a Objetos (POO) é um paradigma de desenvolvimento de software que organiza o código em torno de objetos, que são estruturas capazes de armazenar dados (atributos) e comportamentos (métodos). A ideia central é representar elementos do mundo real ou conceitos abstratos de forma mais próxima da realidade, tornando o código mais intuitivo e fácil de manter. Na POO, cada objeto é criado a partir de um modelo chamado classe, que define suas características e funcionalidades. Entre os principais pilares da POO estão: encapsulamento, que protege e organiza o acesso aos dados; herança, que permite criar novas classes a partir de outras já existentes, aproveitando e estendendo funcionalidades; polimorfismo, que possibilita usar métodos com o mesmo nome, mas comportamentos diferentes; e abstração, que foca apenas nos aspectos essenciais de um objeto, escondendo detalhes desnecessários. Esse paradigma é amplamente utilizado em linguagens como Java, C++, Python e C#, pois favorece a reutilização de código, facilita a manutenção e melhora a organização dos projetos. Além de facilitar a organização do código, a POO também favorece o trabalho em equipe e o desenvolvimento de sistemas complexos, pois permite dividir um projeto em partes menores e independentes, que podem ser criadas e testadas separadamente. Essa modularidade reduz o risco de erros e torna mais simples a evolução do software ao longo do tempo, já que é possível adicionar novas funcionalidades ou modificar comportamentos sem precisar reescrever todo o sistema. Outra vantagem é que a POO estimula o reuso de código, pois uma mesma classe ou conjunto de classes pode ser aproveitado em diferentes projetos, economizando tempo e esforço. Por essas razões, a Programação Orientada a Objetos se tornou uma das abordagens mais populares e eficientes no desenvolvimento de software moderno.</p>
-            </div>
-        </div>
-        
-    </div>
-    <div style=" height: 700px; width: 100%; display: inline-flex; background: linear-gradient(90deg,rgba(255, 219, 102, 1) 0%, rgba(255, 144, 31, 1) 100%); width: 100%; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.174);" id="db">
-        <div style="padding-left: 210px; padding-top: 3%;">
-            
-            <div style="width: 600px; text-align: justify; font-size: 18px;">
-                <h2 class="animacao" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#000000; font-size: 30px; text-align: center;  cursor: default;">DB - Banco de Dados</h2>
-                <p  style="cursor: default;">Um banco de dados é um sistema organizado que permite armazenar, gerenciar e recuperar informações de forma eficiente. Ele organiza os dados de maneira estruturada para facilitar o acesso, a manipulação e a atualização das informações. Os bancos de dados são amplamente utilizados em diversas áreas, como finanças, comércio eletrônico, redes sociais e aplicativos, para garantir que grandes volumes de dados sejam tratados com segurança e rapidez. Existem diferentes tipos de bancos de dados, sendo os relacionais, que armazenam dados em tabelas com linhas e colunas e utilizam a linguagem SQL para consultas, e os não relacionais, ou NoSQL, que oferecem formatos mais flexíveis para o armazenamento, como documentos, grafos ou pares chave-valor. Para controlar e garantir a integridade, segurança e eficiência no uso dos dados, são usados os sistemas de gerenciamento de banco de dados (SGBD), que são softwares responsáveis por todas as operações de acesso e manipulação das informações. Além disso, os bancos de dados são fundamentais para a tomada de decisões nas organizações, pois permitem a análise rápida e precisa das informações armazenadas. Com o avanço da tecnologia, surgiram bancos de dados em nuvem, que oferecem maior escalabilidade, flexibilidade e facilidade de acesso remoto, facilitando o trabalho colaborativo e o uso em ambientes distribuídos. A segurança dos dados também é um aspecto crucial, sendo necessária a implementação de mecanismos de controle de acesso, criptografia e backups regulares para proteger as informações contra perdas, acessos não autorizados e falhas no sistema. Dessa forma, os bancos de dados são essenciais para garantir a integridade, disponibilidade e confiabilidade dos dados nas mais diversas aplicações.</p>
-            </div>
-        </div>
-        <div>
-            <img src="ICONES/Banco de Dados.png" alt="" style="height: 500px; margin-left: 150px; margin-top: 100px;">
-        </div>
-    </div>
-    <div style=" height: 700px; width: 100%; display: inline-flex;  background-color: #F6F6F6; margin-top: 75px;" id="programacao">
-        <div style="text-align: center; margin-left: 200px;">
-            <img src="ICONES/programacao.png" alt="" style="height: 450px;  margin-top: 50px;">
-        </div>
-        <div style="padding-left: 150px; padding-top: 3%;">
-            <div style="width: 600px; text-align: justify; font-size: 18px;">
-                <h2 class="animacao" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#FFCD24; font-size: 30px; text-align: center;  cursor: default;">Introdução a Programação</h2>
-                <p  style="cursor: default;">Introdução à Programação é uma disciplina fundamental na área da computação, voltada para o aprendizado dos conceitos básicos da construção de softwares. Nessa matéria, os estudantes aprendem a lógica de programação, que envolve a capacidade de pensar de forma estruturada e sequencial para resolver problemas. São ensinados elementos como variáveis, operadores, estruturas de decisão (como "if" e "else"), estruturas de repetição (como "for" e "while"), além da criação e utilização de funções. Geralmente, a disciplina utiliza linguagens de programação como Python, C ou Java para facilitar o entendimento dos conceitos e a prática da escrita de código.
-                Além dos aspectos técnicos, Introdução à Programação também estimula o raciocínio lógico, a resolução de problemas e o pensamento computacional — habilidades essenciais não apenas para a programação, mas para diversas áreas profissionais. Os alunos aprendem ainda a importância de escrever códigos limpos, bem estruturados e documentados, seguindo boas práticas de desenvolvimento. Com o avanço das aulas, é comum o desenvolvimento de pequenos projetos e algoritmos, o que contribui para a fixação do conteúdo e para a construção de uma base sólida para disciplinas mais avançadas na área de tecnologia e ciência da computação.
-                </p>
-            </div>
-        </div>
-        
-    </div>
-    <FOOTER>
-        <div style="background-color: #FFCD24; height: 180px; text-align: center;">
-            <div style="display: inline-flex; margin-top: 15px;">
-                <div>
-                    <a href="#poo"><button class="botao">POO</button></a>
-                </div>
-                <div>
-                    <a href="#db"><button class="botao">Banco de Dados</button></a>
-                </div>
-                <div>
-                    <a href="#programacao"><button class="botao">Programação</button></a>
-                </div>
-                <div>
-                    <button class="botao">Contato</button>
-                </div>
-                <div>
-                    <a href="https://www.youtube.com/cursoemvideo" target="_blank"><button class="botao">Guanabara</button></a>
-                </div>
-                <div>
-                    <a href="https://pt.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)" target="_blank"><button class="botao">Política de Cookies</button></a>
-                </div>
-                <div>
-                    <a href="https://sistec.mec.gov.br/login/login" target="_blank"><button class="botao">Portal do Aluno</button></a>
-                </div>
-            </div>
-            <div style="margin-top: 30px; color: rgb(26, 26, 26);">
-                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 14px;" id="fone">Fone: (49) 99999-9999 | example@gmail.com <br>R. Assis Brasil, 119 - Maria Goretti, <br>Chapecó - SC, 89801-355</p>
-            </div>
-            <footer>
-                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i>@_matheus.049</i></p>
-            </footer>
-        </div>
-    </FOOTER>
-</body>
-
-</html>
-
-
+    <div style="text-align: center; height: 300px; background-color: #f6f6f6; margin-top: 30px; margin-bottom: 50px; border-left: #FFCD24; border-left-style: solid; border-left-width: 14px; border-right: #FFCD24; border-right-style: solid; border-right-width: 14px;">
+        <div style="display: inline-flex; height: 100%; font-size: 17px; background

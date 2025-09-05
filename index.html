@@ -105,15 +105,56 @@
     html{
         scroll-behavior: smooth;
     }
+    @media (max-width: 600px) {
+        #logoCedup{
+            width: 120px;
+        }
+        .botao{
+            font-size: 6px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        #titulo{
+            font-size: 90px;
+        }
+        #divTitulo{
+            top: 10px;
+        }
+         #divIMG {
+        height: 300px; 
+        width: 100%;
+        }
+        #imgFundo {
+            object-fit: cover;
+            width: 100%;  
+            height: 100%; 
+        }
+        #divLinguagens{
+            zoom: 30%;
+        }
+        }
+        #poo{
+            zoom: 30%;
+        }
+        #db{
+            zoom: 30%;
+        }
+        #programacao{
+            zoom: 30%;
+        }
+        #panfletodiv{
+            zoom: 30%;
+        }
+    }
 
 </style>
 <body>
     <figure style="margin: 0px; padding: 0px; cursor:default; border-left: 0px; border-right: 0px; border-style: solid; border-color: #FFCD24;">
-        <div style="width: 100%; height: 600px; overflow: hidden;">
+        <div style="width: 100%; height: 600px; overflow: hidden;" id="divIMG">
             <img src="ICONES/fotoTurma.jpg" alt="" id="imgFundo">
         </div>
-        <div style="height: 50px; position: absolute; top: 160px; text-align: center; width: 100%;">
-            <figcaption style="font-size: 150px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(26, 26, 26);" id="title"><b style="margin: auto; "><a href="#" style="text-decoration: none; color: #FFCD24; ">PRONATEC</a></b></figcaption>
+        <div style="height: 50px; position: absolute; top: 140px; text-align: center; width: 100%;" id="divTitulo">
+            <figcaption style="font-size: 150px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(26, 26, 26);" id="title"><b style="margin: auto; "><a href="#" style="text-decoration: none; color: #FFCD24; "><span id="titulo">PRONATEC</span></a></b></figcaption>
         </div>
         <div style="width: 100%; height: 50px; position: absolute; top: 310px; text-align: center;">
             <figcaption style="color: rgb(255, 255, 255); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;"><b><a href="#" style="text-decoration: none; color: rgb(255,255,255);">Análise e Desenvolvimento de Sistemas.</a></b></figcaption>
@@ -156,7 +197,7 @@
             <img src="ICONES/banne2.png" alt="" style="width: 100%;">
         </div>
     <div style="text-align: center; height: 300px; 
-     background-color: #f6f6f6; margin-top: 30px; margin-bottom: 50px; border-left: #FFCD24; border-left-style: solid; border-left-width: 14px; border-right: #FFCD24; border-right-style: solid; border-right-width: 14px;">
+     background-color: #f6f6f6; margin-top: 30px; margin-bottom: 50px; border-left: #FFCD24; border-left-style: solid; border-left-width: 14px; border-right: #FFCD24; border-right-style: solid; border-right-width: 14px;"  id="divLinguagens">
     <div style="display: inline-flex;height: 100%; font-size: 17px; background-color: #f6f6f600; border-radius: 20px; padding-left: 50px; padding-right: 50px; ">
         <div class="paragrafos">
             <a href="https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)" target="_blank"><img src="ICONES/JAVA.png" alt="" class="linguagens"></a>
@@ -171,9 +212,9 @@
     </div>
     <div style=" height: 800px; width: 100%; display: inline-flex;  background-color: #F6F6F6;" id="poo">
         <div>
-            <img src="ICONES/UrsinhoPooh.png" alt="" style="height: 600px; margin-left: 150px;">
+            <img src="ICONES/UrsinhoPooh.png" alt="" style="height: 600px; margin-left: 150px;" id="pooh">
         </div>
-        <div style="padding-left: 200px; padding-top: 3%;">
+        <div style="padding-left: 200px; padding-top: 3%;" id="divpoo">
             
             <div style="width: 600px; text-align: justify; font-size: 18px;">
                 <h2 class="animacao" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#FFCD24; font-size: 30px; text-align: center;  cursor: default;" >POO - Programação Orientada a Objetos</h2>
@@ -190,7 +231,7 @@
                 <p  style="cursor: default;">Um banco de dados é um sistema organizado que permite armazenar, gerenciar e recuperar informações de forma eficiente. Ele organiza os dados de maneira estruturada para facilitar o acesso, a manipulação e a atualização das informações. Os bancos de dados são amplamente utilizados em diversas áreas, como finanças, comércio eletrônico, redes sociais e aplicativos, para garantir que grandes volumes de dados sejam tratados com segurança e rapidez. Existem diferentes tipos de bancos de dados, sendo os relacionais, que armazenam dados em tabelas com linhas e colunas e utilizam a linguagem SQL para consultas, e os não relacionais, ou NoSQL, que oferecem formatos mais flexíveis para o armazenamento, como documentos, grafos ou pares chave-valor. Para controlar e garantir a integridade, segurança e eficiência no uso dos dados, são usados os sistemas de gerenciamento de banco de dados (SGBD), que são softwares responsáveis por todas as operações de acesso e manipulação das informações. Além disso, os bancos de dados são fundamentais para a tomada de decisões nas organizações, pois permitem a análise rápida e precisa das informações armazenadas. Com o avanço da tecnologia, surgiram bancos de dados em nuvem, que oferecem maior escalabilidade, flexibilidade e facilidade de acesso remoto, facilitando o trabalho colaborativo e o uso em ambientes distribuídos. A segurança dos dados também é um aspecto crucial, sendo necessária a implementação de mecanismos de controle de acesso, criptografia e backups regulares para proteger as informações contra perdas, acessos não autorizados e falhas no sistema. Dessa forma, os bancos de dados são essenciais para garantir a integridade, disponibilidade e confiabilidade dos dados nas mais diversas aplicações.</p>
             </div>
         </div>
-        <div>
+        <div id="divimgbdd">
             <img src="ICONES/Banco de Dados.png" alt="" style="height: 500px; margin-left: 150px; margin-top: 100px;">
         </div>
     </div>
@@ -207,7 +248,7 @@
             </div>
         </div>
     </div>
-    <div style="text-align: center; margin-top: 0px;  margin-bottom: 40px;">
+    <div style="text-align: center; margin-top: 0px;  margin-bottom: 40px;" id="panfletodiv">
         <div style="padding-top: 25px; width: 500px; margin: auto; border-style:dashed; border-color: #FFCD24; border-width: 10px;">
             <img src="ICONES/panfletoCedup.enc" alt="" style="height: 450px; margin-bottom: 20px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);" class="animacao">
         </div>

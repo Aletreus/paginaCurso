@@ -6,12 +6,23 @@
     <title>Cadastro</title>
     <link rel="shortcut icon" href="ICONES/logoPronatec.png" type="image/x-icon" />
     <style>
+         html, body {
+            height: 100%; 
+            margin: 0;
+        }
         body {
             background: linear-gradient(90deg, rgba(255, 219, 102, 1) 0%, rgba(255, 144, 31, 1) 100%);
             background-image: url(ICONES/banne2.png);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover; 
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            text-align: center; 
         }
+
         .input {
             border: 0;
             border-radius: 5px;
@@ -27,6 +38,7 @@
             transition: transform 0.2s ease;
         }
         header {
+            text-align: left;
             position: fixed;
             top: 0;
             left: 0;
@@ -54,6 +66,11 @@
         .botao:hover {
             transform: scale(1.05);
             color: #012c81;
+        }
+        @media (max-width:600px ) {
+            body{
+                zoom: 60%;
+            }
         }
     </style>
 </head>
